@@ -38,7 +38,7 @@ You need to purchase the following hardware to work through the workshop.  The w
 - 6 x Female to Female jumper wires (search for **dupont cable f2f or f-f** - usually sold in packs of 40 cables)
 - MicroUSB cable (Please ensure it is a data cable, not just a power cable)
 
-![ModeMCU ESP32-CAM](../images/ESP32-CAM-Pins.png)
+![ModeMCU ESP32-CAM](../images/esp32cam-pinout.jpg)
 
 ## Installing the required software
 
@@ -104,34 +104,6 @@ Select OK to close the preferences dialog.
 Note:  if you already have a URL configured, add a comma at the end and then add the new URL to the end.
 
 Select *Tools* -> *Board:* -> *Board Manager...* from the menu, then enter ESP in the search box.  This should reveal an item **esp32 by ESP32-CAM community**.  Click inside the ESP32-CAM box then press install to install the latest plugin.  Once installed close the board manager.
-
-### Step 4 - Install the filesystem upload tool for ESP32-CAM
-
-The ESP32-CAM has flash memory that can hold a filesystem.  There is a plugin for Arduino that allows you to generate a populated filesystem and upload it to the ESP32-CAM board.  The plugin can be downloaded from [**here**](https://github.com/ESP32-CAM/arduino-ESP32-CAMfs-plugin).  You need to create a tools directory within the sketch directory then extract the content there.
-(*Note: Not sure if this part works with ESP32-CAM*)
-
-![tools directory](../images/toolsDirectory.png)
-
- (*Note: you can find the sketch directory location from the preferences panel of the Arduino IDE*).  The default location of the sketch directory is:
-
-- Linux - **/home/< user name >/Arduino/tools/ESP32-CAMfs**
-- MacOS - **/Users/< user name >/Documents/Arduino/tools/esp8266fs**
-- Windows - **C:\Users\< user name >\Documents\Arduino\tools\esp8266fs**
-
-#### Step 5 - SSL utility to work with certificates
-
-During the workshop you will be generating your own self-signed certificates, so need the OpenSSL tooling installed.  Follow the instructions for your OS below:
-
-- Linux : openssl is installed as part of the OS for most distros, so should have nothing to do here.  If it is not installed then most distros have an openssl package which can be installed using the distro package installer tool.
-- MacOS : openssl is installed as part of the OS, so nothing to do here.
-- Windows : There are 2 options for installing OpenSSL on Windows.  You can install a binary distribution to run on Windows or you can enable the Windows Subsystem for Linux, which provides a Linux environment within Windows:
-  - **Windows Binary**: The openssl official website only provides source.  You can choose to build the binaries from source, but there are links to sites hosting prebuilt binaries, such as [this site](https://slproweb.com/products/Win32OpenSSL.html) for 32 and 64 bit Windows.  You want to select one of the 1.1.x versions.  You only need light version for this workshop, but you can choose the full version if you want the additional developer resources.  When installing, the default install options are OK.  The standard install does **NOT** add the openssl executable to the system PATH, so you will need to specify the full path of the binary when entering commands, unless you add it to the PATH, e.g. `c:\OpenSSL-Win64\bin\openssl.exe`.  Note this method will not provide the xxd binary, but you don't need it for this workshop.  If you get an error saying **MSVCR120.dll** is missing, then you can download the Visual Studeio 2013 redistibutable package [here](https://support.microsoft.com/en-us/help/3179560).
-  - **Windows Subsystem for Linux**:  This option installs a Linux distribution within Windows, so you get access to all the Linux utilities and can install additional packages, such as openssl. To enable Linux Services for windows follow the instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10).  Select Debian as the Linux distribution, then when it is installed launch Debian then run the following commands at the Linux command prompt:
-
-    ```bash
-    sudo apt-get update ; sudo apt-get upgrade
-    sudo apt-get install openssl
-    ```
 
 ## Ensure you have a working IBM Cloud account
 
