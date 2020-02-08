@@ -32,7 +32,7 @@ There are no incoming ports needed for the workshop, but the ESP32-CAM needs to 
 
 You need to purchase the following hardware to work through the workshop.  The workshop instructions uses the DHT11 temperature and humidity sensor.  This can be replaced with the DHT22 sensor, which has the same pinout, but offers a more accurate sensor.  DHT11 is accurate within 2C, whilst the DHT22 is accurate to within 0.5C.
 
-- ESP32-CAM, (search for **NodeMCU ESP32-CAM v1.1**)
+- ESP32-CAM, (search for ** ESP32-CAM **)
 - NeoPixel RGB LED (or any other chainable RGB/RGBW LED based on ws2812b or sk6812 chips ), such as [this from Adafruit](https://www.adafruit.com/product/1734) (Search for **Neopixel 8mm or 5mm** - often sold in packs of 5)
 - DHT11 Temperature / Humidity Sensor (search for **DHT11 or DHT22**)
 - 6 x Female to Female jumper wires (search for **dupont cable f2f or f-f** - usually sold in packs of 40 cables)

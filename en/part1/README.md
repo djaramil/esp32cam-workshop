@@ -8,11 +8,11 @@ Before you can start working on this workshop you need to have some prerequisite
 
 ## Overview of the Workshop - 15 min
 
+- practical [**Quick Start on ESP32-CAM**](ESP32CAM-QuickStart.md)
 - practical [**Prerequisite Install and setup**](PREREQ.md)
 
 ## Introduction to the ESP32-CAM - 10 min
 
-- practical [**Quick Start on ESP32-CAM**](ESP32CAM-QuickStart.md)
 - practical [**First App on ESP32-CAM**](FIRSTAPP.md)
 
 ## ESP32-CAM WiFi connectivity - 15 min
