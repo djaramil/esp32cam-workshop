@@ -2,7 +2,7 @@
 [Home](/README.md) - [Part 1](/en/part1/README.md) - [Part 2](/en/part2/README.md) - [Part 3](/en/part3/README.md) - [Part 4](/en/part4/README.md) - [Sensors](/en/sensors/README.md)
 ***
 
-# Translating the ESP8266 IoT Workshop
+# Translating the ESP32CAM IoT Workshop
 
 We would welcome any offers to translate the workshop into other languages.  
 

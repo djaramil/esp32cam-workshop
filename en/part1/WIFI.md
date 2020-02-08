@@ -4,11 +4,11 @@
 **Part 1** - [Setup](PREREQ.md) - [First App](FIRSTAPP.md) - [**WIFI**](WIFI.md) - [LED](LED.md) - [DHT](DHT.md) - [Cloud](IOTCLOUD.md)
 ***
 
-# Connecting the ESP32S to a WiFi network
+# Connecting the ESP32-CAM to a WiFi network
 
 ## Lab Objectives
 
-This Lab will show you how to connection your ESP32S to a local WiFi network.  This Lab will also introduce the Serial Monitor, which allows you to see output from a running application.  By the end of this lab you should:
+This Lab will show you how to connection your ESP32-CAM to a local WiFi network.  This Lab will also introduce the Serial Monitor, which allows you to see output from a running application.  By the end of this lab you should:
 
 - Be able to add a WiFi connection to a sketch
 - Be able to add a Serial connection and generate output to the serial connection.
@@ -16,25 +16,25 @@ This Lab will show you how to connection your ESP32S to a local WiFi network.  T
 
 ## Introduction
 
-In the First App practical you verified you had a working development environment and uploaded your first application to the ESP32S.  Now we will start exploring some of the more advanced functionality of the ESP32S, starting with the on board WiFi interface.
+In the First App practical you verified you had a working development environment and uploaded your first application to the ESP32-CAM.  Now we will start exploring some of the more advanced functionality of the ESP32-CAM, starting with the on board WiFi interface.
 
-The ESP32S has a built in WiFi interface that supports 802.11 b/g/n 2.4 GHz networking.  5GHz frequencies are not supported.  The ESP32S can be setup to be an access point or to join an existing Wireless LAN.  We are going to join a LAN in the workshop.
+The ESP32-CAM has a built in WiFi interface that supports 802.11 b/g/n 2.4 GHz networking.  5GHz frequencies are not supported.  The ESP32-CAM can be setup to be an access point or to join an existing Wireless LAN.  We are going to join a LAN in the workshop.
 
 ### Step 1 - Load an example sketch
 
-In the Arduino IDE, load the WiFiScan example sketch, using *File* -> *Examples* -> *WiFi* -> *WiFiScan* then upload the sketch to your ESP32S.  This sketch will scan for local WiFi networks and display the results.
+In the Arduino IDE, load the WiFiScan example sketch, using *File* -> *Examples* -> *WiFi* -> *WiFiScan* then upload the sketch to your ESP32-CAM.  This sketch will scan for local WiFi networks and display the results.
 
 ### Step 2 - Run the sketch and monitor output
 
 ![Serial Monitor](../images/SerialMonitor.png)
 
-To display the results, the sketch is using the Serial interface on the ESP32S to send output to.  This output will be sent back into the USB port on your laptop/workstation.  To see the output you need to open up the Serial Monitor, which is the magnifying glass icon at the top right of the IDE.  You must ensure that the baud rate set in the serial monitor matches the speed of the `Serial.begin(115200);` statement in the setup function in the sketch.
+To display the results, the sketch is using the Serial interface on the ESP32-CAM to send output to.  This output will be sent back into the USB port on your laptop/workstation.  To see the output you need to open up the Serial Monitor, which is the magnifying glass icon at the top right of the IDE.  You must ensure that the baud rate set in the serial monitor matches the speed of the `Serial.begin(115200);` statement in the setup function in the sketch.
 
 Every 5 seconds you will see the board scan for available networks then output what it finds to the serial port.
 
-### Step 3 - Access the documentation for the enhanced ESP32S library
+### Step 3 - Access the documentation for the enhanced ESP32-CAM library
 
-You can get documentation about using ESP32S in Arduino and the libraries that are installed with the ESP32S plugin from [here](http://arduino-esp8266.readthedocs.io/en/latest/index.html).  If you finish this assignment early modify the sketch to show the channel number each network is using and the encryption type in addition to the SSID and RSSI(signal strength).
+You can get documentation about using ESP32-CAM in Arduino and the libraries that are installed with the ESP32-CAM plugin from [here](http://arduino-esp8266.readthedocs.io/en/latest/index.html).  If you finish this assignment early modify the sketch to show the channel number each network is using and the encryption type in addition to the SSID and RSSI(signal strength).
 
 ### Step 4 - How to connect to a WiFi network
 
@@ -42,7 +42,7 @@ The example sketch **WiFiClient** shows how to connect to a WiFi network, provid
 
 *Note: you don't need to run this example and apply for the sparkfun credentials, simply walk through the code and see how the connection to the WiFi is created.*
 
-### Step 5 - Understanding the pattern of using the ESP32S Library
+### Step 5 - Understanding the pattern of using the ESP32-CAM Library
 
 Now you have seen 2 different example sketches using both Serial and WiFi connections.  You may begin to see a pattern on how to use the resources:
 
