@@ -1,5 +1,5 @@
 *Quick links :*
-[**Home**](/README.md) - [Part 1](/en/part1/README.md) - [Part 2](/en/part2/README.md) - [Part 3](/en/part3/README.md) - [Part 4](/en/part4/README.md) - [Sensors](/en/sensors/README.md)
+[**Home**](/README.md) - [Part 1](/en/part1/README.md) - [Part 2](/en/part2/README.md) - [Part 3](/en/part3/README.md) - [Sensors](/en/sensors/README.md)
 ***
 
 # Welcome to the ESP32-CAM IoT Workshop
@@ -27,13 +27,6 @@ The second part of the workshop looks at the Internet of Things service on the I
 
 In this section we look at using a low-code development environment called Node-RED on the IBM Cloud to implement the server side part of the IoT solution.  You will create a dashboard to visualise the IoT data and also provide controls to configure the ESP32-CAM device.  Your server side application will also control the LED attached to the ESP32-CAM.
 
-### [Part 4](/en/part4/README.md)
-
-The last part of the workshop looks at how useful information can be extracted from the IoT data using analytics.  You will be introduced to the Analytic services available on the IBM Cloud and the tooling the services provide to help you extract useful information from sensor data.
-
-Timing of the day can be found in the [**agenda**](/en/AGENDA.md)
-
-We've provided all the links used throughout the workshop as well as links to other resources [**here**](/en/RESOURCES.md) to help you explore a little more about IoT.
 ***
 *Quick links :*
-[**Home**](/README.md) - [Part 1](/en/part1/README.md) - [Part 2](/en/part2/README.md) - [Part 3](/en/part3/README.md) - [Part 4](/en/part4/README.md) - [Sensors](/en/sensors/README.md)
+[**Home**](/README.md) - [Part 1](/en/part1/README.md) - [Part 2](/en/part2/README.md) - [Part 3](/en/part3/README.md) - [Sensors](/en/sensors/README.md)

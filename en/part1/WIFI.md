@@ -1,5 +1,5 @@
 *Quick links :*
-[Home](/README.md) - [**Part 1**](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) - [Part 4](../part4/README.md) - [Sensors](/en/sensors/README.md)
+[Home](/README.md) - [**Part 1**](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) - [Sensors](/en/sensors/README.md)
 ***
 **Part 1** - [Setup](PREREQ.md) - [First App](FIRSTAPP.md) - [**WIFI**](WIFI.md) - [LED](LED.md) - [DHT](DHT.md) - [Cloud](IOTCLOUD.md)
 ***
@@ -34,7 +34,7 @@ Every 5 seconds you will see the board scan for available networks then output w
 
 ### Step 3 - Access the documentation for the enhanced ESP32-CAM library
 
-You can get documentation about using ESP32-CAM in Arduino and the libraries that are installed with the ESP32-CAM plugin from [here](http://arduino-esp8266.readthedocs.io/en/latest/index.html).  If you finish this assignment early modify the sketch to show the channel number each network is using and the encryption type in addition to the SSID and RSSI(signal strength).
+You can get documentation about using ESP32-CAM in Arduino and the libraries that are installed with the ESP32-CAM plugin from [here](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html).  If you finish this assignment early modify the sketch to show the channel number each network is using and the encryption type in addition to the SSID and RSSI(signal strength).
 
 ### Step 4 - How to connect to a WiFi network
 
@@ -56,4 +56,4 @@ Now you have seen 2 different example sketches using both Serial and WiFi connec
 *Quick links :*  
 **Part 1** - [Setup](PREREQ.md) - [First App](FIRSTAPP.md) - [**WIFI**](WIFI.md) - [LED](LED.md) - [DHT](DHT.md) - [Cloud](IOTCLOUD.md)
 ***
-[Home](/README.md) - [**Part 1**](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) - [Part 4](../part4/README.md) - [Sensors](/en/sensors/README.md)
+[Home](/README.md) - [**Part 1**](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) - [Sensors](/en/sensors/README.md)
