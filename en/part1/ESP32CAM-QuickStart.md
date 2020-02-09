@@ -44,7 +44,7 @@ Change the content of `CameraWebServer.ino` file to make it look like this (Keep
 Select your serial port.  If you don't see the serial port, you will need to install a serial port driver for your FTDI serial programmer.  A common serial chip used is the CP2101 and install the appropriate driver for your OS from this link:
 https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 
-Be noticed that in the `void setup()` function, we set `Serial.begin(115200);`, so make sure you setup the `Upload speed` configuration with same value. For example:
+Take notice that in the `void setup()` function, we set `Serial.begin(115200);`, so make sure you setup the same `speed` value on the Serial Monitor configuration. Serial Monitor is used for debug output and you can open it by going to the Arduino Menu, select Tools / Serial Monitor.  See below:
 
 ![Speed](../images/speed.png)
 
