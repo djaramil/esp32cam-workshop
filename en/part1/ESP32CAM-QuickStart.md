@@ -27,10 +27,6 @@ Then go to `Tools >> Board: >> Board Manager ...` on the menu bar, then search f
 
 ![ESP32](../images/board-manager.png)
 
-Now, go to the Board configurations and select your ESP32-CAM board, in this case “AI Thinker ESP32-CAM“.
-
-![ESP32](../images/esp32-board.png)
-
 ## Load the CameraWebServer example code
 
 Assuming you've had the parts wired up together and connected them to your computer with the Arduino IDE opened. Now open the example code by accessing the menu item following this screenshot
@@ -65,13 +61,9 @@ Before uploading the code, make sure the port that the ESP32-CAM is connected to
 
 ![Port](../images/port.png)
 
-The partiion option
+Now, go to the Board configurations and you select the correct ESP32-CAM board, in this case “AI Thinker ESP32-CAM“.
 
-![Partition](../images/partition.png)
-
-and the right Board is selected, like this:
-
-![Board](../images/upload1.png)
+![ESP32](../images/esp32-board.png)
 
 Press the Reset button on the ESP32-CAM then upload the code to the ESP32-CAM, either using the `Upload` button on the IDE, or `Sketch >> Upload`
 
