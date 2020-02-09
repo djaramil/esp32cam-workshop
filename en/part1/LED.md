@@ -44,22 +44,27 @@ So, with the shortest pin on the left and the flat side on the right the pinout 
 
 You need to connect the Data In, +5/3.3 voltage and ground to the ESP32-CAM board as shown in the diagram.  Take care to ensure that the connections are as shown, as connecting the wrong pins can damage the ESP32-CAM board and/or the LED:
 
-![ModeMCU LED Wiring](../images/ESP32-CAM+Neopixel-LED.png)
+![ESP32-CAM LED Wiring](../images/ESP32-CAM+Neopixel-LED.png)
 
-Click [**here**](../images/ESP32-CAM-Pins.png) to view **ESP32-CAM** pinout. 
-For more details go [here](http://forum.fritzing.org/t/ESP32-CAM-hiletgo-dev-boad-with-pinout-template/5357)
+Click [**here**](../images/ESP32-CAM-pinout.png) to view **ESP32-CAM** pinout. 
 
 ### Step 3 - Load an example sketch
 
 Once you have the connections made you can connect the board to your laptop.  Load the example sketch **strandtest** *File* -> *Examples* -> *AdaFruit Neopixel* -> *strandtest*.  You need to make a couple of changes to the example sketch:
 
-1. Change the PIN number to 5.  GPIOP5 maps to pin 29 on the ESP32-CAM processor - see the [pinout](../images/ESP32-CAM-Pins.png))
+1. Change the PIN number to 4 which maps to GPIO4 maps on the ESP32-CAM processor - see the [pinout](../images/ESP32-CAM-pinout.png))
 2. Set the number of pixels to 1 in the strip definition line
 3. In the loop function comment out the 4 lines starting with **theatreChase** as these cause rapid flashing when only a single LED is connected, which is not pleasant to look at.
 
 When you save the file you should be prompted to save it as a new file (you cannot override example files, so need to save them to another location to be able to modify them).
 
-Compile and upload the sketch to see the LED change colours.
+4. Install Neopixel library - On Arduino, click on Sketch/Include Library/Manage Libraries
+![Install Neopixel Library](../images/Arduino-manage-libraries.png)
+
+5. Search for Neopixel and install Adafruit NeoPixel Library
+![Search for Neopixel Library](../images/Library-Neopixel.png)
+
+6. Compile and upload the sketch to see the LED change colours.
 
 Here is a more simplified version of the sample code you can use:
 
@@ -72,7 +77,7 @@ Here is a more simplified version of the sample code you can use:
 // --------------------------------------------------------------------------------------------
 
 // Add GPIO pins used to connect devices
-#define RGB_PIN 5 // GPIO pin the data line of RGB LED is connected to
+#define RGB_PIN 4 // GPIO pin the data line of RGB LED is connected to
 
 #define NEOPIXEL_TYPE NEO_RGB + NEO_KHZ800
 
@@ -133,7 +138,7 @@ To add the NeoPixel to your own application you need to do the following:
 
 For any library installed with the Arduino Library Manager you can get to the documentation for the library using the **More info** link in the Library Manager:
 
-![ModeMCU LED Wiring](../images/LibraryManagerInfo.png)
+![ESP32-CAM LED Wiring](../images/LibraryManagerInfo.png)
 
 ***
 *Quick links :*  

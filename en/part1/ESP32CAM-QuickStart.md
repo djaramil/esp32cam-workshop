@@ -41,6 +41,9 @@ Change the content of `CameraWebServer.ino` file to make it look like this (Keep
 
 ![ESP32](../images/ESP32-CameraServerCode.png)
 
+Select your serial port.  If you don't see the serial port, you will need to install a serial port driver for your FTDI serial programmer.  A common serial chip used is the CP2101 and install the appropriate driver for your OS from this link:
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
 Be noticed that in the `void setup()` function, we set `Serial.begin(115200);`, so make sure you setup the `Upload speed` configuration with same value. For example:
 
 ![Speed](../images/speed.png)
