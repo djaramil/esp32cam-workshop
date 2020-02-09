@@ -35,9 +35,9 @@ The DHT sensors have 3 or 4 connecting pins.  There is a DHT11 that is mounted o
 - Data
 - Ground
 
-![ModeMCU DHT Wiring](../images/ESP32-CAM+DHT11.png)
+![ESP32-CAM DHT Wiring](../images/ESP32-CAM+DHT11.png)
 
-If you have a DHT mounted on a module then you need to check the pinout, usually indicated on the board, with **+** (to 3V pin), **-** (to G pin) and **out** or **data** (to D2 pin):
+If you have a DHT mounted on a module then you need to check the pinout, usually indicated on the board, with **+** (to 3V pin), **-** (to G pin) and **out** or **data** (to GPIO pin):
 
 ![DHT module](../images/DHTmodule.png)
 
@@ -45,10 +45,13 @@ If you have a DHT mounted on a module then you need to check the pinout, usually
 
 To see how to use the DHT sensor there is an example sketch.  *File* -> *Examples* -> *DHT Sensor Library* -> *DHTtester*.  You need to make a couple of changes before you can run the sketch:
 
-1. Update the pin to the correct GPIO pin on the ESP32-CAM corresponding to D2 on the NodeMCU board.  The ![pinout](../images/esp32layout.png) diagram will tell you that you need GPIO 4.
+1. Update DHTPIN on the sketch to the appropriate GPIO pin on the ESP32-CAM board.  The diagram will tell you that you need GPIO 13.  Other GPIO pins can work but will have side effects.  GPIO4 is tied to the onboard LED - so it doesn't work with this sensor.  GPIO 2, 12 and perhaps others have to be disconnected when you are flashing the sketch.  GPIO 12 can only be connected after the board has booted.  The point being, make sure you test thoroughly when you try to use any other GPIO pins.
+
 2. Set the DHT type.  You are using DHT11 sensors, so uncomment the DHT11 line and comment out the DHT22 line.
 
 When you save the sketch you will need to save it to your Arduino directory as you can't modify the example source.  Once saved you can now compile and upload the sketch.  This sketch uses Serial output to print out the values read, so you will need to open the Serial monitor and set the baud rate to match the Serial.begin() line in the sketch = 9600.
+
+![DHT module](../images/DHT-Sketch.png)
 
 ### Step 4 - Understanding the DHT sensor library
 
@@ -64,6 +67,7 @@ To add the DHT sensor to your own application you need to do the following:
     - `dht.readTemperature(bool isFahrenheit)`
     - `dht.readHumidity()`
 
+![ESP32-CAM DHT Wiring](../images/ESP32-CAM-DHT11-finished.png)
 ***
 *Quick links :*  
 **Part 1** - [Setup](PREREQ.md) - [First App](FIRSTAPP.md) - [WIFI](WIFI.md) - [LED](LED.md) - [**DHT**](DHT.md) - [Cloud](IOTCLOUD.md)
