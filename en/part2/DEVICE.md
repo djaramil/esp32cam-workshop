@@ -23,7 +23,7 @@ You need to decide how you want to group devices, by function, by hardware type,
 
 In the IBM Cloud navigate to your dashboard using the top menu *≡* -> *Dashboard*, then select your starter kit application.  In the overview section of the application select the iotf-service under Connections.  This will take you to the IoT Platform service.  Launch the console.
 
-### Step 2 - Add a new device type for ESP32S devices
+### Step 2 - Add a new device type for ESP32S devices
 
 Navigate into the Devices section of the console and ensure you are in the **Browse** section.  Press the **+ Add Device** button the enter the following:
 
