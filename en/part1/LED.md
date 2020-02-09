@@ -138,7 +138,12 @@ To add the NeoPixel to your own application you need to do the following:
 
 For any library installed with the Arduino Library Manager you can get to the documentation for the library using the **More info** link in the Library Manager:
 
-![ESP32-CAM LED Wiring](../images/LibraryManagerInfo.png)
+
+
+Completed Project Picture
+
+![ESP32CAM completed project ](../images/ESP32-Cam-Neopixel.png)
+
 
 ***
 *Quick links :*  
