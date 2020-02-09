@@ -2,25 +2,24 @@
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md)  - [**Sensors**](/en/sensors/README.md)
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [**Ultrasonic Sensor**](ESP32S+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32S+Neopixel-LED+PIR.md) - [Heart sensor](PULSE+RGB.md) - [OLED LCD Display Module](SSD1306_Display.md) - [GY-291 ADXL345 Gravity Tilt Module](GY-291_ADXL345_Gyroscope.md) 
-<!-- - [Whopper Sensors](ESP32S+Pulse+Neopixel-LED+Ultrasonic+DHT11+Display.md)  -->
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](ESP32-CAM+SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
 ***
 
-This part contains instruction to get started with Ultrasonic HC-SR04 sensor on ESP32S
+This part contains instruction to get started with Ultrasonic HC-SR04 sensor on ESP32-CAM
 
 ## Lab Objectives
 
-In this lab you will learn how to connect the Pulse sensor to the ESP32S board and how to access data from the sensor, then take actions based on the data returned.
+In this lab you will learn how to connect the Pulse sensor to the ESP32-CAM board and how to access data from the sensor, then take actions based on the data returned.
 
 You will learn:
 
-- The electrical connections needed to connect the ultrasonic sensor to the ESP32S
+- The electrical connections needed to connect the ultrasonic sensor to the ESP32-CAM
 - Run a simple application to read data from the sensor and change color of a Neo Pixel RGB
 - The useful library used to build more advanced application using the sensor
 
 Parts in this lab:
 
-- ESP32S (36 pins)
+- ESP32-CAM (36 pins)
 - HC-SR04 Ultrasonic Sensor
 - Neo Pixel 8mm 
 - male-male Jumpers
@@ -29,7 +28,7 @@ Parts in this lab:
 
 First you need to wire the part together on a breadboard. Here is the diagram of the example
 
-![ESP32S ultrasonic sensor wiring](../images/ESP32S+Neopixel-LED+HC-SR04.png)
+![ESP32-CAM ultrasonic sensor wiring](../images/ESP32-CAM+Neopixel-LED+HC-SR04.png)
 
 GPIO 5 is used to control the LED colors. TRIG pin (purple) of the Ultrasoni sensor is connected to analog pin GPIO 22. ECHO pin (blue) is connected to analog pin GPIO 23.
 
@@ -116,11 +115,10 @@ The LED should be set to a colour based on the pulse value and the threashold se
 
 You can see the graphical view of the pulse output by opening the Serial Plottter view (Remember to close the Serial Monitor view first): Tool >> Serial Plotter
 
-![Serial Plotter](../images/ESP32S+Neopixel-LED+HC-SR04-output.png)
+![Serial Plotter](../images/ESP32-CAM+Neopixel-LED+HC-SR04-output.png)
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [**Ultrasonic Sensor**](ESP32S+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32S+Neopixel-LED+PIR.md) - [Heart sensor](PULSE+RGB.md) - [OLED LCD Display Module](SSD1306_Display.md) - [GY-291 ADXL345 Gravity Tilt Module](GY-291_ADXL345_Gyroscope.md) 
-<!-- - [Whopper Sensors](ESP32S+Pulse+Neopixel-LED+Ultrasonic+DHT11+Display.md)  -->
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](ESP32-CAM+SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
 ***
 *Quick links :*
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) -  - [Sensors](/en/sensors/README.md)

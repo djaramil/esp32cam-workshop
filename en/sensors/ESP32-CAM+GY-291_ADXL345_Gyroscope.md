@@ -2,27 +2,26 @@
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md)  - [**Sensors**](/en/sensors/README.md)
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32S+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32S+Neopixel-LED+PIR.md) - [Heart sensor](PULSE+RGB.md) - [OLED LCD Display Module](SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](GY-291_ADXL345_Gyroscope.md) 
-<!-- - [Whopper Sensors](ESP32S+Pulse+Neopixel-LED+Ultrasonic+DHT11+Display.md)  -->
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](GY-291_ADXL345_Gyroscope.md)
 ***
 
-This part contains instruction to get started with GY-291 ADXL345 Gravity Tilt Module on ESP32S. THE GY-291 ADXL345 3-Axis Accelerometer is a sensor board based on ADXL345 accelerometer integrated circuit. The ADXL345 is a small, thin, ultralow power, 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16 g. 
+This part contains instruction to get started with GY-291 ADXL345 Gravity Tilt Module on ESP32-CAM. THE GY-291 ADXL345 3-Axis Accelerometer is a sensor board based on ADXL345 accelerometer integrated circuit. The ADXL345 is a small, thin, ultralow power, 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16 g. 
 
 The ADXL345 is well suited for mobile device applications. It measures the static acceleration of gravity in tilt-sensing applications, as well as dynamic acceleration resulting from motion or shock. Its high resolution (3.9 mg/LSB) enables measurement of inclination changes less than 1.0°.
 
 ## Lab Objectives
 
-In this lab you will learn how to connect the GY-291 ADXL345 Gravity Tilt Module to the ESP32S board and how to access data from the sensor.
+In this lab you will learn how to connect the GY-291 ADXL345 Gravity Tilt Module to the ESP32-CAM board and how to access data from the sensor.
 
 You will learn:
 
-- The electrical connections needed to connect the GY-291 ADXL345 Gravity Tilt Module to the ESP32S
+- The electrical connections needed to connect the GY-291 ADXL345 Gravity Tilt Module to the ESP32-CAM
 - Run a simple application to read data from the sensor.
 - The useful library used to build more advanced application using the sensor
 
 Parts in this lab:
 
-- ESP32S (36 pins)
+- ESP32-CAM (36 pins)
 - HC-SR501 Pyroelectric Infrared PIR Sensor
 - Neo Pixel 8mm 
 - male-male Jumpers
@@ -32,7 +31,7 @@ Parts in this lab:
 
 First you need to wire the part together on a breadboard. Here is the diagram of the example.
 
-![ESP32S ADXL345 sensor wiring](../images/ESP32S+ADXL345.png)
+![ESP32-CAM ADXL345 sensor wiring](../images/ESP32-CAM+ADXL345.png)
 
 
 Like the OLED display module, the ADXL345 uses the SDA and SCL pins for data transfer, so the two devices cannot be used simultaneously as the ESP 32S has only one SDA(GPIO 21) and SCL pin(GPIO 22). 
@@ -143,11 +142,10 @@ void loop(){
 
 Save, compile and upload the sketch.  Once uploaded open up the Serial Monitor and set the baud rate to 115200, to match the rate set in the Serial.begin(115200) message.  You should see some basic output showing the XYZ values read from the sensor 
 
-![Output Screenshot](../images/ESP32S+GY-291.png)
+![Output Screenshot](../images/ESP32-CAM+GY-291.png)
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32S+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32S+Neopixel-LED+PIR.md) - [Heart sensor](PULSE+RGB.md) - [OLED LCD Display Module](SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](GY-291_ADXL345_Gyroscope.md)
- <!-- - [Whopper Sensors](ESP32S+Pulse+Neopixel-LED+Ultrasonic+DHT11+Display.md)  -->
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](ESP32-CAM+SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
 ***
 *Quick links :*
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) -  [Sensors](/en/sensors/README.md)

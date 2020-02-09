@@ -12,10 +12,6 @@
 
 - Lab: [**Example application to use Pyroelectric Infrared PIR sensor**](ESP32S+Neopixel-LED+PIR.md)
 
-## Human heart / pulse sensor
-
-- Lab: [**Example application to use pulse sensor**](PULSE+RGB.md)
-
 ## OLED LCD Display Module for Arduino
 
 - Lab: [**Example application to use SSD1306 display**](SSD1306_Display.md)
