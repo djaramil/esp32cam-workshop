@@ -27,6 +27,10 @@ Then go to `Tools >> Board: >> Board Manager ...` on the menu bar, then search f
 
 ![ESP32](../images/board-manager.png)
 
+Now, go to the Board configurations and select your ESP32-CAM board, in this case “AI Thinker ESP32-CAM“.
+
+![ESP32](../images/esp32-board.png)
+
 ## Load the CameraWebServer example code
 
 Assuming you've had the parts wired up together and connected them to your computer with the Arduino IDE opened. Now open the example code by accessing the menu item following this screenshot
