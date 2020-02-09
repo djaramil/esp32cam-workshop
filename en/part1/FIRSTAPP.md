@@ -19,10 +19,8 @@ This Lab will show you how to use the Arduino IDE with the ESP32-CAM plugin to c
 
 Let's start with a simple application to display information about the flash memory.  Start by setting up your Arduino IDE to the correct settings for the board.  Using the *Tools* menu, ensure the following settings are set:
 
-- Board : **NodeMCU-32S**
-- Upload Speed : **115200**
-- Flash Frequency: **80MHz**
-- Port : *Connect the ESP32-CAM to your laptop using a MicroUSB cable and then select your port, depending on OS*
+- Board : **AI Thinker ESP32-CAM**
+- Port : *Connect the ESP32-CAM to your laptop using FTDI USB to TTL Serial Converter Adapter Module and then select your port, depending on OS*
 
 ### Step 2 - Loading an example sketch
 
