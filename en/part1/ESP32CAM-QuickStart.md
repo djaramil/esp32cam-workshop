@@ -13,7 +13,7 @@ This turtorial is a quick guide to setup and get started with ESP-32 Camera micr
 - Female to female jumpers (6 of them)
 - The ESP32-CAM doesn’t come with a USB connector, so you need an FTDI programmer to upload code through the U0R and U0T pins. 
 
-You can get the kit here: https://www.amazon.co.uk/KeeYees-ESP32-CAM-Bluetooth-Dual-core-Development/dp/B07S83X9NM
+You can get the kit here: https://www.amazon.com/HiLetgo-ESP32-CAM-Development-Bluetooth-Raspberry/dp/B07RXPHYNM/
 
 ## Integrated Development Environment
 
