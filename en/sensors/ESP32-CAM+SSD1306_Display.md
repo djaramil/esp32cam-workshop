@@ -2,7 +2,7 @@
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md)  - [**Sensors**](/en/sensors/README.md)
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](ESP32-CAM+SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [**OLED LCD Display Module**](ESP32-CAM+SSD1306_Display.md) - [GY-291 ADXL345 Gravity Tilt Module](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
 ***
 
 This part contains instruction to get started with 0.96 i2C OLED LCD LED Display Module for Arduino
@@ -118,7 +118,7 @@ You can see the temperature and humidity displayed on the Display Module
 To see how to use the Display Module in more advanced ways, there are some useful sketch examples that you can load into your IDE. You can load an example from *File* -> *Examples* -> *ESP8266_and_ESP32_Oled_Driver_for_SSD1306_display* and select from the list.
 
 ***
-**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [OLED LCD Display Module](ESP32-CAM+SSD1306_Display.md) - [**GY-291 ADXL345 Gravity Tilt Module**](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
+**Sensor labs: ** [Sensor](README.md) - [Ultrasonic Sensor](ESP32-CAM+Neopixel-LED+HC-SR04.md) - [Pyroelectric Infrared PIR Sensor](ESP32-CAM+Neopixel-LED+PIR.md) - [**OLED LCD Display Module**](ESP32-CAM+SSD1306_Display.md) - [GY-291 ADXL345 Gravity Tilt Module](ESP32-CAM+GY-291_ADXL345_Gyroscope.md)
 ***
 *Quick links :*
 [Home](/README.md) - [Part 1](../part1/README.md) - [Part 2](../part2/README.md) - [Part 3](../part3/README.md) - - [Sensors](/en/sensors/README.md)
