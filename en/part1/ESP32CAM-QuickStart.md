@@ -13,13 +13,17 @@ This turtorial is a quick guide to setup and get started with ESP-32 Camera micr
 - Female to female jumpers (6 of them)
 - The ESP32-CAM doesn’t come with a USB connector, so you need an FTDI programmer to upload code through the U0R and U0T pins. 
 
-You can get the kit here: https://www.amazon.com/HiLetgo-ESP32-CAM-Development-Bluetooth-Raspberry/dp/B07RXPHYNM/
+You can get the kit here: 
+https://www.amazon.com/HiLetgo-ESP32-CAM-Development-Bluetooth-Raspberry/dp/B07RXPHYNM/
 
 ## Integrated Development Environment
 
 This tutorial uses the latest version Arduino IDE to develope the code and load it to the ESP32 CAM. If you're using Mac OS like me, then go here to download the IDE: https://www.arduino.cc/en/Main/Software
 
-Once you have the IDE installed, go to `Tools >> Board: >> Board Manager ...` on the menu bar, then search for `ESP32` and install it
+Once you have the IDE installed,
+Go to File –> Preferences and add the link https://dl.espressif.com/dl/package_esp32_index.json to the Additional Boards Manager URLS.
+
+Then go to `Tools >> Board: >> Board Manager ...` on the menu bar, then search for `ESP32` and install it
 
 ![ESP32](../images/board-manager.png)
 
